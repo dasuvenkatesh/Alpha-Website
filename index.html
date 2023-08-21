@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ALPHA BRANDS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <section class="heroheader">
+        <header class="head">
+            <img src="Logo.jpg" style="height: 150px; width: 150px;border-radius: 30px;transition: 0.3s ease-in-out;">
+            <div class="menulist">
+                <a href="#heroheader">Home</a>
+                <a href="#about-section">About</a>
+                <a href="#brands-section">Our Brands</a>
+                <a href="#video-section">Alpha Team</a>
+                <a href="#contact-section">Contact Us</a>
+            </div>
+           
+        </header>
+    </section>
+    <section class="background-section">
+        <div class="background-container">
+            <p class="heroheader-text">Alpha Brands Welcomes You</p>
+        </div>
+    </section>
+    <section class="brands" id="brands-section" >
+        <div class="text">
+            <img src="doctor.png" alt="buddy" style="float: left;">
+            <h3>Dr Alpha</h3>
+            <p>Dr. Alpha is a pioneering name in the realm of medical products, dedicated to advancing healthcare solutions that empower professionals and enhance patient well-being. With a deep-rooted commitment to innovation and excellence.</p>
+        </div>
+        <button id="b"><a href="https://www.amazon.in/Disposable-Examination-Powder-Free-Allergic-Free-Restaurants/dp/B0BW7MHVQR?th=1">Visit Dr. Alpha</a></button>
+        <div class="text">
+            <img src="pet.png" alt="buddy" style="float: left;">
+            <h3>Buddy Product</h3>
+            <p>Buddy Product" is a comprehensive range of pet-centric offerings designed to enhance the well-being and happiness of our beloved animal companions.jof bvu oqeb gvwdiv yqgev ugwvbqe rhvqwihf vb</p>
+        </div>
+        <button id="b">Coming Soon</button>
+        
+    <div class="text">
+        <img src="ag2.png" alt="buddy" style="float: left;">
+        <h3>Mr. Kissan</h3>
+        <p>Mr. Kissan is a name synonymous with agricultural innovation and progress, dedicated to transforming the way we cultivate and nurture the land. With an unwavering commitment to sustainability and the prosperity of farmers.</p>
+    </div>
+    <button type="submit" id="b">Coming Soon</button>
+    </section>
+    <!--About us-->
+    <section class="about-section" id="about-section">
+        <div class="about">
+            <h1 class="aa">About Alpha Team</h1>
+            <h2 class="aa"><p>Welcome to Alpha's Brands</p></h2>
+    
+            <div class="a1">
+                <img src="pex1.jpg" alt="Our Vision Image" class="image-left">
+                <p>Our Vision: Transform brand experiences in an evolving digital landscape. Empower businesses to thrive through innovation, breaking barriers, and reshaping traditional approaches. We set new standards, creating captivating digital-first brands with global impact. Our creative, forward-thinking approach shapes immersive journeys.</p>
+            </div>
+            <div class="a2">
+                <p>Our Mission: Empower entrepreneurs with distinct digital brands that engage audiences. Craft unique identities, foster lasting connections, and provide tools for thriving in the dynamic digital landscape. We're dedicated to unlocking potential, standing out, and building a foundation for growth. Join us to shape your brand's digital future.</p>
+                <img src="pex2.jpg" alt="Our Mission Image" class="image-right">
+            </div>
+        </div>
+    </section>
+    <!--video section-->
+    <section id="video-section" class="video-section">
+        <div class="video-container">
+            <video controls>
+                <source src="pex video.mp4 " type="video/mp4">
+            </video>
+        </div>
+    </section> 
+    <!--get in touch-->
+    <section class="contact-section" id="contact-section">
+        <h2>Get in Touch with Alpha Team</h2>
+         <p>Have a question or want to get in touch? Fill out the form below, and we'll get back to you as soon as possible.</p>
+        <form id= "myform" action="connect.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your Name">
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your E-Mail">
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required placeholder="Type Your Message Here"></textarea>
+            <div class="button-container">
+                <button type="submit">Submit</button>  
+                <button type="reset">Reset</button>
+            </div>
+        </form> 
+        <div id="thankYouMessage" style="display: none;">
+            <p>Thank you for your submission!</p>
+        </div>     
+    </section>
+    <script>
+        document.getElementById("myform").addEventListener("submit", function(event) {
+            event.preventDefault();
+            const formData = new FormData(event.target);
+            const thankYouMessageDiv = document.getElementById("thankYouMessage");
+            thankYouMessageDiv.style.display = "block";
+            setTimeout(function() {
+                document.getElementById("myform").reset();
+                fetch('connect.php', {
+                    method: 'POST',
+                    body: formData
+                }).then(response => {
+                }).catch(error => {
+                });
+            });
+        });
+    </script>
+
+    
+    <section id="footer-section">
+        <body>
+            <section id="footer-section">
+                <footer>
+                    <div class="one">
+                        <h1>FOR TECHNICAL FEEDBACK</h1>
+                        <p><a href="mailto:dasu.aplhabrands@gmail.com" onclick="sendMail('dasu.aplhabrands@gmail.com')"><i class="fas fa-envelope"></i> dasu.aplhabrands@gmail.com</a></p>
+                        <p><a href="mailto:uma.aplhabrands@gmail.com" onclick="sendMail('uma.aplhabrands@gmail.com')"><i class="fas fa-envelope"></i> uma.aplhabrands@gmail.com</a></p>
+                    </div>
+                    <div class="two">
+                        <h1>FOR INTERNSHIPS AND CAREER</h1>
+                        <p><a href="mailto:connect.aplhabrands@gmail.com" onclick="sendMail('connect.aplhabrands@gmail.com')"><i class="fas fa-envelope"></i> connect.aplhabrands@gmail.com</a></p>
+                        <p><a href="tel:9100232570" onclick="makeCall('9100232570')"><i class="fas fa-phone"></i> 9100232570</a></p>
+                    </div>
+                    <div class="container">
+                        <h1>ALPHA BRANDS</h1>
+                        <a href="mailto:connect.aplhabrands@gmail.com" onclick="sendMail('connect.aplhabrands@gmail.com')"><i class="fas fa-envelope"></i> connect.aplhabrands@gmail.com</a>
+                        <a href="tel:9100232570" onclick="makeCall('9133 232570')"><i class="fas fa-phone"></i> 9133232570</a>
+                    </div>
+                </footer>
+            </section>
+            <script>
+                function sendMail(email) {
+                    window.location.href = "mailto:" + email;
+                }
+            
+                function makeCall(number) {
+                    window.location.href = "tel:" + number;
+                }
+            </script>    
+        </body>
+    </section>
+<script src="script.js"></script>
+</body>
+</html>

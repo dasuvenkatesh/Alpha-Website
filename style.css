@@ -1,0 +1,476 @@
+html{
+    scroll-behavior: smooth;
+    background: linear-gradient(180deg, #efff60, #1f2635, #ffa600);
+    background-blend-mode: multiply
+}
+body{
+    border-radius: 30px;
+    margin: 20px;
+}
+
+.head {
+    background-color: black;
+    padding: 20px;
+    border: 2px solid #fff; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+}
+
+.menulist {
+    font-size: 18px;
+    margin-top: 70px;
+    float: right;
+    margin-left: 20px;
+    display: inline;
+}
+
+.menulist a {
+    margin-right: 30px; /* Adding right margin to create space between menu items */
+}
+
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+a:hover{
+    color: rgb(249, 180, 237);
+    transition: 0.3s ease;
+}
+.heroheader img:hover{
+    transition: 0.3s ease;
+    transform: scale(1.2);
+}
+.section1{
+    margin-bottom: auto;
+ 
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.background-container {
+    margin-top: 20px;
+    background-image: url('web4.jpg');
+    background-size: cover;
+   
+    background-repeat: no-repeat;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+    border: 4px solid #eae7e7; /* Add border to the background image */
+    box-shadow: 0 0 20px rgba(0, 0, 255, 0.5); 
+    border-radius: 30px;
+}
+
+.heroheader-text {
+    color: white; /* Change font color to white */
+    font-size: 50px;
+    text-shadow: 6px 6px 6px rgba(228, 24, 24, 0.5);
+    border: 4px solid white; /* Add border around the text */
+    padding: 10px; /* Adjust padding as needed */
+    box-shadow: 0 0 10px rgba(236, 12, 12, 0.5);
+    border-radius: 30px;
+
+}
+
+.video-section {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio for responsive video */
+    margin-bottom: 0;
+    border: 2px solid #ccc; /* Add border to the video section */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: #ffffff;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Preserve aspect ratio and fill the container */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 10px;
+    padding: 0;
+}
+
+.contact-section {
+    width: 100%;
+    max-width: 800px;
+    margin: 10px auto;
+    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 2px solid #ccc; /* Add border to the contact section */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: #ffffff;
+    border-radius: 30px;
+}
+
+.contact-section h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.contact-section p {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+input,
+textarea {
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+
+button {
+    margin-top: 15px;
+    font-size: 14px;
+    width: 100px;
+    padding: 10px 28px;
+    background-color: #0dda0d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    box-shadow: #131212;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    line-height: 24px;
+    border-radius: 30px;
+}
+button[type="submit"] {
+    margin-right: 30px;
+    
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+
+button:hover {
+    background-color: #190f9c;
+    transition: 0.3s ease;
+}
+
+
+
+/* Style for the footer section */
+#footer-section {
+    font-family: Calibri, Arial, sans-serif;
+    background-color: #131212;
+    padding: 20px;
+    color: #eeebeb;
+    text-align: center;
+    border: 2px solid #eae4e4;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+  }
+  
+  /* Style for the footer divs */
+  #footer-section .one, #footer-section .two, #footer-section .container {
+    width: 33.33%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  /* Style for the heading */
+  #footer-section h1 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  /* Style for the email and phone links */
+  #footer-section a {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+    text-decoration: none;
+  }
+  
+  #footer-section a i {
+    margin-right: 5px;
+  }
+  
+  /* Style for the email links */
+  #footer-section a[href^="mailto:"]:hover {
+    color: #007bff;
+  }
+  
+  /* Style for the phone links */
+  #footer-section a[href^="tel:"]:hover {
+    color: #28a745;
+  }
+  
+.brands-section{
+    margin-bottom: 20px;
+    border-radius: 30px;
+}
+
+/* Style for the sections */
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    border: 2px solid #ccc; /* Add border to the video section */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 30px;
+    background-color: #ffffff;
+    border-radius: 30px;
+}
+
+.about {
+    text-align: center;
+    margin: 20px;
+}
+
+.aa {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.a1, .a2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+}
+
+.image-left, .image-right {
+    max-width: 300px;
+    height: 300px;
+    border-radius: 70px;
+    box-shadow: 0 0 10px rgba(88, 104, 247, 0.5);
+}
+.image-left{
+    margin-right: 20px;
+}
+.image-right{
+    margin-left: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .about-section {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="message"]:focus,
+textarea:focus {
+    outline: none;
+    border-color: #0dda0d;
+    box-shadow: 0 0 8px rgba(13, 218, 13, 0.5);
+    transition: 0.2s ease-out;
+    transform: scale(1.15);
+}
+input[type="text"],
+input[type="email"],
+input[type="message"],
+textarea {
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+input[type="text"]:focus::placeholder,
+input[type="email"]:focus::placeholder,
+input[type="message"]:focus::placeholder,
+textarea:focus::placeholder {
+    opacity: 0.5;
+    transform: translateY(-5px);
+    transition: all 0.2s ease;
+}
+.one{
+    float: left;
+}
+.two{
+    position: relative;
+    float: right;
+}
+.brands{
+    margin-left: 50px;
+    margin-right: 20px;
+    display: grid;
+    place-items:  center;
+    color: rgb(12, 12, 12);
+    font-size: 25px;
+    margin-bottom: 30px;
+  
+}
+.brands img{
+    margin-left: 30px;
+    margin-right: 20px;
+    max-width: 50%;
+    margin-top: 30px;
+    border-radius: 30px;
+    box-shadow: 5px 10px 5px 10px rgba(6, 70, 233, 0.5);
+
+}
+.text{
+    background-color: rgb(233, 255, 172);
+    border: 2px solid rgb(250, 249, 249);
+    box-shadow: 0 0 10px rgb(0, 176, 251);
+    border-radius: 30px;
+    height: 300px;
+    width: auto;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-size: 21px;
+    padding-left: 20px;
+}
+.item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.text h3{
+    display: grid;
+    place-content: center;
+}
+#b{
+    height: auto;
+    width: auto;
+    display: block; /* Make the button a block-level element */
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-top: 10px;
+    background-color: #3aa3ea;
+    color: #fff;
+    cursor: pointer;
+}
+/* Default styles */
+
+/* Your existing CSS here */
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    /* Header */
+    .heroheader img {
+        height: 100px;
+        width: 100px;
+    }
+
+    /* Main block */
+    .mainblock {
+        width: 90%;
+        padding: 10px; /* Add padding for better readability */
+        margin: 0 auto;
+    }
+
+    /* Menu list */
+    .menulist {
+        margin-left: 0;
+        text-align: center;
+        padding: 0; /* Reset padding for mobile */
+    }
+
+    /* Background container */
+    .background-container {
+        height: 40vh; /* Reduce the height for smaller screens */
+    }
+
+    /* Video section */
+    .video-section {
+        padding: 0;
+    }
+
+    /* About section */
+    .about-section {
+        flex-direction: column;
+        padding: 20px; /* Add padding for better readability */
+    }
+
+    /* Text and image containers */
+    .a1,
+    .a2 {
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 20px; /* Adjust spacing */
+    }
+
+    .a1 .image-left,
+    .a2 .image-right {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .a2 .image-right {
+        margin-left: 0;
+    }
+
+    /* Contact section */
+    .contact-section {
+        padding: 20px; /* Add padding for better readability */
+    }
+
+    /* Footer section */
+    #footer-section {
+        padding: 20px;
+    }
+
+    /* Cards section */
+    .text {
+        width: 100%;
+    }
+    
+    #b {
+        margin-top: 20px;
+    }
+    .brands img {
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 20px;
+    }
+}
+
